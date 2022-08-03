@@ -1,14 +1,15 @@
-import java.util.Scanner; // import the Scanner class 
+class Vehicle {
+  protected String brand = "Ford";
+  public void honk() {
+    System.out.println("Tuut, tuut!");
+  }
+}
 
-class Main {
+class Car extends Vehicle {
+  private String modelName = "Mustang";
   public static void main(String[] args) {
-    Scanner myObj = new Scanner(System.in);
-    String userName;
-    
-    // Enter username and press Enter
-    System.out.println("Enter username"); 
-    userName = myObj.nextLine();   
-       
-    System.out.println("Username is: " + userName);        
+    Car myFastCar = new Car();
+    myFastCar.honk();
+    System.out.println(myFastCar.brand + " " + myFastCar.modelName);
   }
 }
