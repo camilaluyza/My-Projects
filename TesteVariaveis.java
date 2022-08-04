@@ -17,6 +17,7 @@ public class TesteVariaveis {
 		
 		System.out.println(idade);
 		
+		System.out.println("a idade é " + idade);
 	}
 	
 	
